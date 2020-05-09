@@ -78,7 +78,7 @@
     function get_poly(latlng){
 		$.ajax({
   	        crossOrigin: true,
-		    url: "zone_autorisee.py?lat="+latlng.lat+"&lon="+latlng.lng
+			url: "https://dev.cadastre.openstreetmap.fr/zone_autorisee.py?lat="+latlng.lat+"&lon="+latlng.lng
 		})
 		.done(function( data ) {
 			poly = data[0]
